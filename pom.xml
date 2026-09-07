@@ -16,7 +16,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	
+	<modules>
+		<module>inventory-domain</module>
+	</modules>
+
 	<properties>
 		<java.version>25</java.version>
 	</properties>
