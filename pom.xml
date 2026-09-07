@@ -18,6 +18,7 @@
 
 	<modules>
 		<module>inventory-domain</module>
+		<module>inventory-persistence</module>
 	</modules>
 
 	<properties>
