@@ -1,0 +1,73 @@
+@baseUrl = http://localhost:8080/api/v1
+
+### 1. Create Root Category (Electronics)
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "parentCategoryId": null
+}
+
+### 2. Create Sub-Category (Smartphones)
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "name": "Smartphones",
+  "parentCategoryId": 1
+}
+
+### 3. Get Root Categories
+GET {{baseUrl}}/categories/roots
+
+### 4. Get Sub-Categories of Electronics
+GET {{baseUrl}}/categories/1/subcategories
+
+### 5. Get Category by ID
+GET {{baseUrl}}/categories/2
+
+### 6. Create Product
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 15",
+  "desc": "Apple flagship smartphone with A16 Bionic chip",
+  "categoryId": 2
+}
+
+### 7. Add Variant to Product
+POST {{baseUrl}}/products/1/variants
+Content-Type: application/json
+
+{
+  "sku": "IP15-128-BLK",
+  "price": 799.99,
+  "attributes": {
+    "color": "Black",
+    "storage": "128GB"
+  }
+}
+
+### 8. Get Product by ID (Includes Variants)
+GET {{baseUrl}}/products/1
+
+### 9. Get Products by Category
+GET {{baseUrl}}/products?categoryId=2
+
+### 10. Update Stock (Requires Warehouse #1 in DB)
+PUT {{baseUrl}}/stocks
+Content-Type: application/json
+
+{
+  "warehouseId": 1,
+  "variantId": 1,
+  "quantity": 25
+}
+
+### 11. Get Stock Details
+GET {{baseUrl}}/stocks?warehouseId=1&variantId=1
+
+### 12. Get All Stock for Warehouse
+GET {{baseUrl}}/stocks/warehouse/1
