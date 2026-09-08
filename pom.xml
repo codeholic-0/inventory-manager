@@ -20,6 +20,7 @@
 		<module>inventory-domain</module>
 		<module>inventory-persistence</module>
 		<module>inventory-service</module>
+		<module>inventory-web</module>
 	</modules>
 
 	<properties>
