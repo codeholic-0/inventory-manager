@@ -1,6 +1,6 @@
 package dev.zen.inventory.service.dto.responses;
 
-import dev.zen.inventory.enums.StockStatus;
+import dev.zen.inventory.domain.enums.StockStatus;
 
 public record StockResponse(
         Long id,

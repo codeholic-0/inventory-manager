@@ -5,12 +5,12 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import dev.zen.inventory.domain.enums.StockStatus;
+import dev.zen.inventory.domain.exceptions.DomainException;
+import dev.zen.inventory.domain.exceptions.EntityNotFoundException;
 import dev.zen.inventory.domain.models.ProductVariant;
 import dev.zen.inventory.domain.models.Stock;
 import dev.zen.inventory.domain.models.Warehouse;
-import dev.zen.inventory.enums.StockStatus;
-import dev.zen.inventory.exceptions.DomainException;
-import dev.zen.inventory.exceptions.EntityNotFoundException;
 import dev.zen.inventory.service.StockService;
 import dev.zen.inventory.service.dto.requests.UpdateStockRequest;
 import dev.zen.inventory.service.dto.responses.StockResponse;

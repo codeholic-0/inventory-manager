@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import dev.zen.inventory.domain.exceptions.DomainException;
+import dev.zen.inventory.domain.exceptions.EntityNotFoundException;
 import dev.zen.inventory.domain.models.Category;
-import dev.zen.inventory.exceptions.DomainException;
-import dev.zen.inventory.exceptions.EntityNotFoundException;
 import dev.zen.inventory.service.CategoryService;
 import dev.zen.inventory.service.dto.requests.CreateCategoryRequest;
 import dev.zen.inventory.service.dto.responses.CategoryResponse;
