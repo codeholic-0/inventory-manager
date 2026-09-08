@@ -1,4 +1,4 @@
-package dev.zen.inventory.enums;
+package dev.zen.inventory.domain.enums;
 
 public enum StockStatus {
     IN_STOCK, LOW_STOCK, OUT_OF_STOCK;

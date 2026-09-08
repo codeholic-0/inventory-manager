@@ -1,4 +1,4 @@
-package dev.zen.inventory.exceptions;
+package dev.zen.inventory.domain.exceptions;
 
 import lombok.Getter;
 
