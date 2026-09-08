@@ -10,15 +10,15 @@ import dev.zen.inventory.domain.exceptions.EntityNotFoundException;
 import dev.zen.inventory.domain.models.Category;
 import dev.zen.inventory.domain.models.Product;
 import dev.zen.inventory.domain.models.ProductVariant;
+import dev.zen.inventory.persistence.repo.CategoryRepository;
+import dev.zen.inventory.persistence.repo.ProductRepository;
+import dev.zen.inventory.persistence.repo.ProductVariantRepository;
 import dev.zen.inventory.service.ProductService;
 import dev.zen.inventory.service.dto.requests.CreateProductRequest;
 import dev.zen.inventory.service.dto.requests.CreateVariantRequest;
 import dev.zen.inventory.service.dto.responses.ProductResponse;
 import dev.zen.inventory.service.dto.responses.ProductVariantResponse;
 import dev.zen.inventory.service.mapper.ProductMapper;
-import dev.zen.persistence.repo.CategoryRepository;
-import dev.zen.persistence.repo.ProductRepository;
-import dev.zen.persistence.repo.ProductVariantRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

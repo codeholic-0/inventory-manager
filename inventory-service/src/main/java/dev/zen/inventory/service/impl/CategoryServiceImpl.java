@@ -8,11 +8,11 @@ import org.springframework.transaction.annotation.Transactional;
 import dev.zen.inventory.domain.exceptions.DomainException;
 import dev.zen.inventory.domain.exceptions.EntityNotFoundException;
 import dev.zen.inventory.domain.models.Category;
+import dev.zen.inventory.persistence.repo.CategoryRepository;
 import dev.zen.inventory.service.CategoryService;
 import dev.zen.inventory.service.dto.requests.CreateCategoryRequest;
 import dev.zen.inventory.service.dto.responses.CategoryResponse;
 import dev.zen.inventory.service.mapper.CategoryMapper;
-import dev.zen.persistence.repo.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

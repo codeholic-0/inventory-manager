@@ -11,12 +11,12 @@ import dev.zen.inventory.domain.exceptions.EntityNotFoundException;
 import dev.zen.inventory.domain.models.ProductVariant;
 import dev.zen.inventory.domain.models.Stock;
 import dev.zen.inventory.domain.models.Warehouse;
+import dev.zen.inventory.persistence.repo.ProductVariantRepository;
+import dev.zen.inventory.persistence.repo.StockRepository;
+import dev.zen.inventory.persistence.repo.WarehouseRepository;
 import dev.zen.inventory.service.StockService;
 import dev.zen.inventory.service.dto.requests.UpdateStockRequest;
 import dev.zen.inventory.service.dto.responses.StockResponse;
-import dev.zen.persistence.repo.ProductVariantRepository;
-import dev.zen.persistence.repo.StockRepository;
-import dev.zen.persistence.repo.WarehouseRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

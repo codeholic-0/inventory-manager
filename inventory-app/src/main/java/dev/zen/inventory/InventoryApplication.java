@@ -6,7 +6,7 @@ import org.springframework.boot.persistence.autoconfigure.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages = "dev.zen.inventory")
-@EnableJpaRepositories(basePackages = "dev.zen.inventory.persistence.repository")
+@EnableJpaRepositories(basePackages = "dev.zen.inventory.persistence.repo")
 @EntityScan(basePackages = "dev.zen.inventory.domain.models")
 public class InventoryApplication {
 

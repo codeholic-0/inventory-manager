@@ -1,4 +1,4 @@
-package dev.zen.persistence.repo;
+package dev.zen.inventory.persistence.repo;
 
 import java.util.List;
 import java.util.Optional;
