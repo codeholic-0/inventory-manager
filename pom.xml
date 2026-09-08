@@ -21,6 +21,7 @@
 		<module>inventory-persistence</module>
 		<module>inventory-service</module>
 		<module>inventory-web</module>
+		<module>inventory-app</module>
 	</modules>
 
 	<properties>
@@ -66,6 +67,9 @@
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
+					<configuration>
+						<skip>true</skip>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
